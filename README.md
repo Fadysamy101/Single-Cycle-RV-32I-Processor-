@@ -7,7 +7,6 @@ A complete implementation of a 32-bit single-cycle RISC-V processor based on Har
 - [Architecture](#architecture)
 - [Features](#features)
 - [Supported Instructions](#supported-instructions)
-- 
 - [FPGA Implementation](#fpga-implementation)
 - [Simulation Results](#simulation-results)
 - [Contributing](#contributing)
@@ -46,7 +45,6 @@ The processor follows the Harvard Architecture with separate instruction and dat
 - ✅ Branch prediction and control flow
 - ✅ Immediate value sign extension
 - ✅ Zero and sign flag generation
-- ✅ Comprehensive testbench suite
 
 ## 📚 Supported Instructions
 

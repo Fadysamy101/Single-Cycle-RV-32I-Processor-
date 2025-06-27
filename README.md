@@ -9,10 +9,8 @@ A complete implementation of a 32-bit single-cycle RISC-V processor based on Har
 - [Supported Instructions](#supported-instructions)
 - [Module Structure](#module-structure)
 - [Getting Started](#getting-started)
-- [Testing](#testing)
 - [FPGA Implementation](#fpga-implementation)
 - [Simulation Results](#simulation-results)
-- [Directory Structure](#directory-structure)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -21,7 +19,9 @@ A complete implementation of a 32-bit single-cycle RISC-V processor based on Har
 This project implements a complete single-cycle RISC-V processor that executes the RV-32I instruction set. The processor performs instruction fetch, decode, execute, write back, and program counter update all within a single clock cycle, making it ideal for educational purposes and FPGA implementation.
 
 ![RISC-V Processor Architecture](docs/images/processor_architecture.png)
-*Complete single-cycle RISC-V processor architecture*
+
+![image](https://github.com/user-attachments/assets/aaf7e3b2-867f-4c0a-91c3-6ebf154122ec)
+
 
 ## 🏗️ Architecture
 
@@ -53,24 +53,7 @@ The processor follows the Harvard Architecture with separate instruction and dat
 
 ### Instruction Types
 | Type | Instructions | Description |
-|---
-## 📁 Directory Structure
 
-Save your images in the following structure for the README to work properly:
-
-```
-your-repo/
-├── docs/
-│   └── images/
-│       ├── processor_schematic.png    # Your second image (processor architecture)
-│       └── simulation_waveform.png    # Your first image (ModelSim simulation)
-├── src/
-│   ├── *.v files                      # Your Verilog source files
-│   └── program.mem                    # Fibonacci machine code
-├── testbench/
-│   └── testbench.v                    # Your testbench file
-└── README.md                          # This file
-```
 
 ------|-------------|-------------|
 | **R-Type** | `ADD`, `SUB`, `AND`, `OR`, `XOR`, `SLL`, `SRL` | Register-register operations |
@@ -174,7 +157,8 @@ addi x3,x0,1      # Selector register
 **Expected Output**: `1, 1, 2, 3, 5, 8, 13, 21, 34, 55`
 
 ![Simulation Waveform](docs/images/simulation_waveform.png)
-*Example simulation waveform showing Fibonacci execution*
+![image](https://github.com/user-attachments/assets/b5b89d32-b4fb-4ecc-bde8-94791b36c698)
+
 
 ## 🔌 FPGA Implementation
 
@@ -212,41 +196,6 @@ addi x3,x0,1      # Selector register
 - **CPI (Cycles Per Instruction)**: 1 (single-cycle)
 - **Instruction Throughput**: 50 MIPS @ 50 MHz
 
-### Validation Results
-![Test Results](docs/images/test_results.png)
-*Fibonacci sequence test results showing correct computation*
-
-## 📁 Directory Structure
-
-```
-riscv-processor/
-│
-├── src/                      # Source Verilog files
-│   ├── riscv_processor.v    # Top module
-│   ├── alu.v               # ALU implementation
-│   ├── control_unit.v      # Control logic
-│   └── ...                 # Other modules
-│
-├── testbench/               # Testbench files
-│   ├── riscv_tb.v         # Main testbench
-│   └── fibonacci_test.v    # Fibonacci test
-│
-├── docs/                    # Documentation
-│   ├── images/             # Architecture diagrams
-│   ├── fibonacci.s         # Assembly test program
-│   └── instruction_set.md  # Detailed instruction reference
-│
-├── quartus/                 # FPGA project files
-│   ├── riscv.qpf          # Quartus project
-│   └── constraints.sdc     # Timing constraints
-│
-├── simulation/              # Simulation scripts
-│   ├── run_sim.do         # ModelSim script
-│   └── wave.do            # Waveform setup
-│
-└── README.md               # This file
-```
-
 ## 🔬 Advanced Features
 
 ### Future Enhancements
@@ -267,24 +216,14 @@ Contributions are welcome! Please feel free to submit issues, feature requests, 
 
 ### Development Guidelines
 1. Follow Verilog coding standards
-2. Include comprehensive testbenches
-3. Update documentation for new features
-4. Ensure FPGA synthesis compatibility
+2. Update documentation for new features
+3. Ensure FPGA synthesis compatibility
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **UC Berkeley** - RISC-V ISA specification
-- **Digital Design and Computer Architecture** by Harris & Harris
-- **RISC-V Foundation** - Architecture documentation
 
 ## 📞 Contact
 
-**Your Name** - your.email@example.com  
-**Project Link** - https://github.com/yourusername/riscv-processor
+**Fady Samy** - fadysamy541@gmail.com 
+
 
 ---
 

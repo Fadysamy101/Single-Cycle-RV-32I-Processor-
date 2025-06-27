@@ -7,12 +7,11 @@ A complete implementation of a 32-bit single-cycle RISC-V processor based on Har
 - [Architecture](#architecture)
 - [Features](#features)
 - [Supported Instructions](#supported-instructions)
-- [Module Structure](#module-structure)
-- [Getting Started](#getting-started)
+- 
 - [FPGA Implementation](#fpga-implementation)
 - [Simulation Results](#simulation-results)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## 🎯 Overview
 
@@ -71,75 +70,6 @@ The processor follows the Harvard Architecture with separate instruction and dat
 | `101` | A >> B | Shift Right Logical |
 | `110` | A \| B | OR |
 | `111` | A & B | AND |
-
-## 🔧 Module Structure
-
-The processor is built from the following main modules:
-
-### Core Modules
-```
-├── riscv_processor.v          # Top-level processor module
-├── alu.v                      # Arithmetic Logic Unit
-├── register_file.v            # 32×32 register file
-├── instruction_memory.v       # ROM for instructions
-├── data_memory.v             # RAM for data storage
-├── control_unit.v            # Main control logic
-├── alu_decoder.v             # ALU control decoder
-└── pc_module.v               # Program counter logic
-```
-
-### Supporting Modules
-```
-├── sign_extend.v             # Immediate value sign extension
-├── mux_2x1.v                # 32-bit 2:1 multiplexer
-└── adder.v                  # 32-bit binary adder
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- **Verilog HDL** knowledge
-- **ModelSim/QuestaSim** or similar simulator
-- **Quartus Prime** (for FPGA synthesis)
-- **Cyclone® IV FPGA** development board
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/riscv-processor.git
-   cd riscv-processor
-   ```
-
-2. **Set up your simulation environment**
-   ```bash
-   # For ModelSim
-   vlib work
-   vmap work work
-   ```
-
-3. **Compile the design**
-   ```bash
-   vlog src/*.v
-   vlog testbench/*.v
-   ```
-
-## 🧪 Testing
-
-The project includes a comprehensive testbench that runs a **Fibonacci sequence generator** program to validate processor functionality.
-
-### Running Simulations
-
-1. **Compile testbench**
-   ```bash
-   vlog testbench/riscv_tb.v
-   ```
-
-2. **Run simulation**
-   ```bash
-   vsim -t ps riscv_tb
-   run -all
-   ```
 
 ### Test Program: Fibonacci Sequence
 
@@ -222,8 +152,7 @@ Contributions are welcome! Please feel free to submit issues, feature requests, 
 
 ## 📞 Contact
 
-**Fady Samy** - fadysamy541@gmail.com 
-
+**Fady Samy Nabil Daoud** - fadysamy541@gmail.com 
 
 ---
 
